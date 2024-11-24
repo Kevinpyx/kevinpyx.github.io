@@ -5,3 +5,59 @@
     object-fit: cover;   /* Ensures image fills the space without distortion */
     margin: 20px 0;     /* Adds some space above and below the image */
 } 
+
+/* Navigation bar styling */
+nav {
+    background-color: #333;  /* Dark background - adjust color as needed */
+    padding: 1rem;
+    position: fixed;  /* Makes the nav bar stick to the top while scrolling */
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Makes items horizontal */
+    justify-content: center;  /* Centers items horizontally */
+    gap: 2rem;  /* Adds space between items */
+}
+
+nav a {
+    color: white;  /* Makes link text white */
+    text-decoration: none;  /* Removes underline */
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;  /* Smooth color transition for hover effect */
+}
+
+nav a:hover {
+    color: #ddd;  /* Slightly darker white on hover */
+}
+
+/* Optional: If you want the header title centered above the nav */
+header h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+} 
+
+.contact-info {
+    padding: 20px;
+    background-color: #f5f5f5;  /* Light grey background */
+    border-radius: 8px;         /* Rounded corners */
+    max-width: 500px;           /* Maximum width */
+    margin: 0 auto;             /* Center the container */
+}
+
+.contact-info p {
+    margin: 10px 0;             /* Space between paragraphs */
+}
+
+.contact-info a {
+    color: #0066cc;             /* Link color */
+    text-decoration: none;      /* Remove underline */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Add underline on hover */
+} 
