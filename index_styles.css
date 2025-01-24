@@ -1,0 +1,66 @@
+.contact-info {
+    padding: 15px;
+    background-color: #f4f4f4;  /* Light grey background */
+    border-radius: 8px;         /* Rounded corners */
+    max-width: 500px;           /* Maximum width */
+    margin: 0 auto;             /* Center the container */
+}
+
+.contact-info p {
+    line-height: 1.5rem;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.about-container h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "Helvetica", sans-serif;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    row-gap: 0;
+}
+
+#about {
+    margin-top: 30px;  /* Adjust this value to increase/decrease space */
+}
+
+.profile-image {
+    width: 200px;  /* Adjust size as needed */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;  /* Prevents image from shrinking */
+}
+
+.about-text {
+    flex: 1;  /* Takes up remaining space */
+}
+
+/* Make it responsive for mobile screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+} 
+
+/* Add this media query for mobile devices */
+@media screen and (max-width: 768px) {  /* 768px is typical tablet/phone breakpoint */
+    .about-content {
+        flex-direction: column;  /* Stack items vertically */
+        text-align: center;      /* Center the text */
+    }
+} 

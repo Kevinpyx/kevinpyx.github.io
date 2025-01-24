@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuxin Peng - Research</title>
+    <link rel="stylesheet" href="master_styles.css">
+    <link rel="stylesheet" href="research_styles.css">
+
+    <style> 
+        /* tag selector: tag name */
+        /* id selector: # */
+        /* class selector: . */
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul> <!-- ul stands for unordered list -->
+                <!-- TODO: add a dropdown menu for different items -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Other Works</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Quantifying Gerrymandering -->
+        <article class="project">
+            <header class="project-header">
+                <h2 class="project-title">Quantifying Gerrymandering</h2>
+                <div class="project-meta">
+                    <span class="project-location">Grinnell College</span>
+                    <span class="project-year">2024-2025</span>
+                </div>
+            </header>
+            
+            <div class="project-gallery">
+                <!-- Add as many images as needed -->
+                <figure class="gallery-item">
+                    <img src="images/research_images/gerrymander/mergesplit.png" alt="mergesplit figure">
+                    <a href="https://arxiv.org/abs/1911.01503" target="_blank" class="no-underline">
+                        <figcaption class="gallery-caption">
+                            Figure 1: Random districting sampling process - forest recombination (Autry et al, 2019)
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/research_images/gerrymander/russo.png" alt="russo algorithm">
+                    <a href="https://arxiv.org/abs/1801.06846" target="_blank" class="no-underline">
+                        <figcaption class="gallery-caption">
+                            Figure 2: Russo's algorithm visualization (Russo et al, 2018)
+                        </figcaption>
+                    </a>
+                </figure>
+            </div>
+            
+            <div class="project-description">
+                <p>
+                    In this project, I worked collaboratively with Chong Zhao under the guidance of <a href="https://www.ericautry.com/" target="_blank">Professor Eric Autry</a>, whose 
+                    research applies the Metropolis-Hastings algorithm to detect gerrymandering. My task involves analyzing the 
+                    behavior of two algorithms for sampling random spanning trees from a known distribution, in order to identify 
+                    whether we could replace the other as a subroutine in the forest recombination process (figure 1) of the 
+                    Metropolis-Hastings algorithm.
+                </p>
+                <p>
+                    The first algorithm is Wilson's algorithm, a method based on loop-erased random walk. This algorithm suffers 
+                    significantly when edge weights are introduced. The second algorithm is Russo's algorithm, which samples 
+                    spanning trees iteratively. We expect Russo's algorithm to outperform Wilson's algorithm with weighted graphs.
+                </p>
+                <p>
+                    I presented this research at the <a href="https://jointmathematicsmeetings.org/jmm" target="_blank">Joint Mathematics Meetings</a> in January 2025.
+                </p>
+            </div>
+        </article>
+
+        <!-- ANNS -->
+        <article class="project">
+            <header class="project-header">
+                <h2 class="project-title">Benchmarking Approximate-Nearest-Neighbor-Search Algorithms</h2>
+                <div class="project-meta">
+                    <span class="project-location">Oak Ridge National Laboratory</span>
+                    <span class="project-year">2023</span>
+                </div>
+            </header>
+            
+            <div class="project-gallery">
+                <!-- Add as many images as needed -->
+                <figure class="gallery-item">
+                    <img src="images/research_images/anns/anns.png" alt="nearest neighbor search figure">
+                    <a href="https://arxiv.org/abs/1702.08734" target="_blank" class="no-underline">
+                        <figcaption class="gallery-caption">
+                            Figure 1: Nearest neighbor search (Johnson et al, 2017)
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/research_images/anns/poster.jpg" alt="russo algorithm">
+                        <figcaption class="gallery-caption">
+                            Figure 2: Poster
+                        </figcaption>
+                </figure>
+            </div>
+            
+            <div class="project-description">
+                <p>
+                    In this project, I worked independently under the guidance of Doctor Seung-Hwan Lim, a research scientist at ORNL.
+                    I studied and benchmarked the performance of several ANNS algorithms, including Product Quantization, Locality-Sensitive 
+                    Hashing, and Hierarchical Navigable Small World Graph, evaluating and interpreting their performance in terms of recall, 
+                    precision, and time complexity.
+                </p>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
