@@ -20,6 +20,7 @@
 .project-meta {
     color: #666;
     font-size: 1.1rem;
+    font-style: italic;
 }
 
 .project-location::after {
@@ -82,5 +83,10 @@
 
     .project-gallery {
         grid-template-columns: 1fr;
+    }
+
+    .project-description p {
+        text-indent: 2em;
+        margin: 0.5em 0;
     }
 }
