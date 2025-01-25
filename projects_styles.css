@@ -30,12 +30,51 @@
 
 .photo {
     break-inside: avoid;
-    margin-bottom: clamp(5px, 1vw, 20px);  /* Responsive margin between photos */
+    margin-bottom: clamp(5px, 1vw, 20px);
+    position: relative;  /* For positioning the overlay */
 }
 
 .photo img {
     width: 100%;
     display: block;
+    transition: filter 0.3s ease;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  /* Dark overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;  /* Hidden by default */
+    transition: opacity 0.3s ease;
+    color: white;
+    text-align: center;
+}
+
+.photo:hover img {
+    filter: brightness(0.7);  /* Darkens the image */
+}
+
+.photo:hover .photo-overlay {
+    opacity: 1;  /* Show overlay on hover */
+}
+
+.photo-location {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    margin: 0 0 0.5em 0;
+}
+
+.photo-date {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+    margin: 0;
 }
 
 /* Make it responsive for smaller screens */
