@@ -46,7 +46,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);  /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.5);  /* Dark overlay */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,22 +57,25 @@
     text-align: center;
 }
 
-.photo:hover img {
-    filter: brightness(0.7);  /* Darkens the image */
+.photo:hover .photo-overlay,
+.photo:active .photo-overlay {
+    opacity: 1;  /* Show overlay on hover and touch */
 }
 
-.photo:hover .photo-overlay {
-    opacity: 1;  /* Show overlay on hover */
+.photo:hover img,
+.photo:active img {
+    filter: brightness(0.7);  /* Darkens the image on hover and touch */
 }
 
 .photo-location {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
     font-size: 1.1em;
     margin: 0 0 0.5em 0;
 }
 
 .photo-date {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 0.9em;
     margin: 0;
 }
