@@ -198,13 +198,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 
 .lightbox-content {
     max-width: 90%;
-    max-height: 80vh;
+    max-height: 70vh;  /* Reduced to leave space for caption */
     object-fit: contain;
-    margin: auto;
+    display: block;
 }
 
 .lightbox-close {
@@ -220,18 +221,21 @@
 .lightbox-caption {
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     font-family: monospace;
+    margin-top: 1rem;  /* Space between image and caption */
+    position: static;  /* Remove absolute positioning */
 }
 
 .lightbox-location {
     font-size: 1.2em;
     margin: 0;
+    font-weight: bold;
 }
 
 .lightbox-date {
     font-size: 0.9em;
-    margin: 0.5em 0 0 0;
+    margin: 0.2em 0 0 0;
 }
 
 /* Prevent scrolling when lightbox is open */
