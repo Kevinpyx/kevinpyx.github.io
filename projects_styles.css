@@ -68,14 +68,14 @@
 }
 
 .photo-location {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: monospace;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin: 0 0 0.5em 0;
 }
 
 .photo-date {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: monospace;
     font-size: 0.9em;
     margin: 0;
 }
@@ -97,5 +97,16 @@
     
     .photo {
         margin-bottom: 5px;
+    }
+
+    /* Hide overlay on mobile */
+    .photo-overlay {
+        display: none;  /* Completely removes the overlay */
+    }
+    
+    /* Remove hover effects on mobile since overlay is hidden */
+    .photo:hover img,
+    .photo:active img {
+        filter: none;
     }
 } 

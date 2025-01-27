@@ -64,3 +64,77 @@
         text-align: center;      /* Center the text */
     }
 } 
+
+/* Highlights Section */
+.highlights-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.highlights-row {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;  /* Space for scrollbar */
+    scroll-behavior: smooth;  /* Smooth scrolling */
+    -webkit-overflow-scrolling: touch;  /* Smooth scrolling on iOS */
+}
+
+/* Hide scrollbar but keep functionality */
+.highlights-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.highlights-row::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.highlights-row::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.highlight-item {
+    flex: 0 0 300px;  /* Fixed width, don't grow or shrink */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.highlight-description {
+    text-align: center;
+    margin: 0.5rem 0;
+    line-height: 1.4;
+}
+
+.highlight-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.highlight-link:hover {
+    text-decoration: underline;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .highlight-item {
+        flex: 0 0 250px;  /* Smaller on mobile */
+    }
+    
+    .highlight-image {
+        width: 250px;
+        height: 250px;
+    }
+} 
