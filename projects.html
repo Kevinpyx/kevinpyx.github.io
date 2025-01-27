@@ -12,7 +12,14 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="projects.html">Other Works</a></li>
+            <li class="dropdown">
+                <a href="projects.html">Other Works</a>
+                <ul class="dropdown-content">
+                    <li><a href="projects.html#apps">App Development</a></li>
+                    <li><a href="projects.html#films">Short Films</a></li>
+                    <li><a href="projects.html#photos">Photography</a></li>
+                </ul>
+            </li>
             <!-- Add other navigation items as needed -->
         </ul>
     </nav>
@@ -25,7 +32,40 @@
 
         <div class="project">
             <h2 id="apps" class="section-title">App Development</h2>
+            
+            <!-- Example App Project -->
+            <article class="app-project">
+                <h3 class="app-title">GrinSync</h3>
+                
+                <div class="app-gallery">
+                    <figure class="gallery-item">
+                        <img src="images/project_images/apps/grinsync/upcoming.png" alt="Upcoming events">
+                        <figcaption class="gallery-caption">
+                            Upcoming events
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/project_images/apps/grinsync/calwithframe.png" alt="Calendar with frame">
+                        <figcaption class="gallery-caption">
+                            Event calendar page
+                        </figcaption>
+                    </figure>
+                </div>
+                
+                <div class="app-description">
+                    <p>
+                        In Spring 2024, I worked with a team of 6 to develop a mobile app called GrinSync. This app is designed to help users 
+                        find and join events on Grinnell College's campus. It allows users to create and join events, and to view event details. 
+                        Through this app, we hope to help students find events to attend, and to help event organizers reach more people.
+                    </p>
+                    <p>
+                        I worked on the front-end of the app, using <a href="https://flutter.dev/" target="_blank">Flutter</a> and <a href="https://dart.dev/" target="_blank">Dart</a>. 
+                        You can find more information about the app on our <a href="https://grinsync.com/" target="_blank">website</a> and <a href="https://github.com/grinsync" target="_blank">GitHub</a> page.
+                    </p>
+                </div>
+            </article>
 
+            <!-- Add more app projects following the same structure -->
         </div>
 
         
@@ -61,7 +101,7 @@
 
         <div class="project">
             <h2 id="photos" class="section-title">Photography</h2>
-            <div class="photo-gallery">
+                <div class="photo-gallery">
                 <div class="photo">
                     <img src="images/project_images/photography/amherst.jpeg" alt="Photo of Ashley's Reservoir">
                     <div class="photo-overlay">
@@ -300,20 +340,20 @@
                         <p class="photo-date">January 2025</p>
                     </div>
                 </div>
-                <div class="photo">
+                        <div class="photo">
                     <img src="images/project_images/photography/grinnell11.jpeg" alt="Photo of Grinnell">
                     <div class="photo-overlay">
                         <p class="photo-location">Grinnell, IA</p>
                         <p class="photo-date">May 2024</p>
                     </div>
-                </div>
-                <div class="photo">
+                        </div>
+                        <div class="photo">
                     <img src="images/project_images/photography/sunsettree.jpeg" alt="Photo of a tree at sunset">
                     <div class="photo-overlay">
                         <p class="photo-location">Grinnell, IA</p>
                         <p class="photo-date">February 2024</p>
                     </div>
-                </div>
+                        </div>
                 <div class="photo">
                     <img src="images/project_images/photography/hongkong5.jpeg" alt="Photo of Hong Kong">
                     <div class="photo-overlay">
@@ -321,20 +361,20 @@
                         <p class="photo-date">March 2024</p>
                     </div>
                 </div>
-                <div class="photo">
+                        <div class="photo">
                     <img src="images/project_images/photography/changshu4.jpeg" alt="Photo of Changshu">
                     <div class="photo-overlay">
                         <p class="photo-location">Changshu, Jiangsu</p>
                         <p class="photo-date">December 2023</p>
-                    </div>
-                </div>
-                <div class="photo">
+                        </div>
+                        </div>
+                        <div class="photo">
                     <img src="images/project_images/photography/sunset.jpeg" alt="Photo of a sunset">
                     <div class="photo-overlay">
                         <p class="photo-location">Shantou, Guangdong</p>
                         <p class="photo-date">December 2023</p>
                     </div>
-                </div>
+                        </div>
                 <div class="photo">
                     <img src="images/project_images/photography/westlake.jpeg" alt="Photo of West Lake">
                     <div class="photo-overlay">
@@ -342,20 +382,20 @@
                         <p class="photo-date">January 2024</p>
                     </div>
                 </div>
-                <div class="photo">
+                        <div class="photo">
                     <img src="images/project_images/photography/rockcreek.jpeg" alt="Photo of Rock Creek State Park">
                     <div class="photo-overlay">
                         <p class="photo-location">Newton, IA</p>
                         <p class="photo-date">December 2024</p>
                     </div>
-                </div>
-                <div class="photo">
+                        </div>
+                        <div class="photo">
                     <img src="images/project_images/photography/grinnell8.jpeg" alt="Photo of Grinnell">
                     <div class="photo-overlay">
                         <p class="photo-location">Grinnell, IA</p>
                         <p class="photo-date">April 2024</p>
                     </div>
-                </div>
+                        </div>
                 <div class="photo">
                     <img src="images/project_images/photography/newmexico.jpeg" alt="Photo of New Mexico">
                     <div class="photo-overlay">

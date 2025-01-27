@@ -109,4 +109,73 @@
     .photo:active img {
         filter: none;
     }
+}
+
+/* App Project Styling */
+.app-project {
+    margin: 3rem 0;
+    padding: 0 1rem;
+}
+
+.app-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.app-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.app-gallery .gallery-item {
+    flex: 0 1 300px;
+    margin: 0;
+    text-align: center;
+}
+
+.app-gallery img {
+    max-width: 100%;
+    height: 50vh;
+    border-radius: 8px;
+
+}
+
+.app-gallery .gallery-caption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.app-description {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.app-description p {
+    text-indent: 3em;
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .app-gallery {
+        gap: 1rem;
+    }
+
+    .app-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .app-description p {
+        text-indent: 2em;
+        margin-bottom: 0.5rem;
+    }
 } 
