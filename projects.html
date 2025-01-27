@@ -409,5 +409,61 @@
     <footer>
         <p>&copy; 2024-2025 Yuxin Peng - All rights reserved</p>
     </footer>
+
+    <!-- Lightbox container -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption">
+            <p class="lightbox-location"></p>
+            <p class="lightbox-date"></p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxLocation = document.querySelector('.lightbox-location');
+            const lightboxDate = document.querySelector('.lightbox-date');
+            
+            // Add click handlers to all photos
+            document.querySelectorAll('.photo').forEach(photo => {
+                photo.addEventListener('click', e => {
+                    const img = photo.querySelector('img');
+                    const location = photo.querySelector('.photo-location').textContent;
+                    const date = photo.querySelector('.photo-date').textContent;
+                    
+                    lightboxImg.src = img.src;
+                    lightboxLocation.textContent = location;
+                    lightboxDate.textContent = date;
+                    lightbox.classList.add('active');
+                    document.body.classList.add('lightbox-open');
+                });
+            });
+
+            // Close lightbox when clicking the close button
+            document.querySelector('.lightbox-close').addEventListener('click', () => {
+                lightbox.classList.remove('active');
+                document.body.classList.remove('lightbox-open');
+            });
+
+            // Close lightbox when clicking outside the image
+            lightbox.addEventListener('click', e => {
+                if (e.target === lightbox) {
+                    lightbox.classList.remove('active');
+                    document.body.classList.remove('lightbox-open');
+                }
+            });
+
+            // Close lightbox with Escape key
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                    lightbox.classList.remove('active');
+                    document.body.classList.remove('lightbox-open');
+                }
+            });
+        });
+    </script>
 </body>
 </html> 
