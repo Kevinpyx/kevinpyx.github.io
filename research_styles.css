@@ -2,7 +2,7 @@
 .project {
     max-width: 100%;
     margin: 4rem auto;
-    padding: 0 2rem;
+    padding: 0 10rem;
 }
 
 /* Project Header */
@@ -13,17 +13,20 @@
 }
 
 .project-title {
+    font-family: "Helvetica", sans-serif;
     font-size: 2rem;
     margin: 0 0 0.5rem 0;
 }
 
 .project-meta {
+    font-family: "Helvetica", sans-serif;
     color: #666;
     font-size: 1.1rem;
     font-style: italic;
 }
 
 .project-location::after {
+    font-family: "Helvetica", sans-serif;
     content: " | ";
     color: #999;
 }
@@ -55,17 +58,20 @@
 } */
 
 .gallery-caption {
+    font-family: "Helvetica", sans-serif;
     margin-top: 0.5rem;
     font-size: 0.9rem;
     color: #666;
 }
 
 .project-description {
+    font-family: "Helvetica", sans-serif;
     font-size: 1.1rem;
     color: #333;
 }
 
 .project-description p {
+    text-align: justify;
     text-indent: 3em;
     margin: 1em 0;
 }

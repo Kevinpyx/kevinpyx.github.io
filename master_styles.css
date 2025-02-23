@@ -9,8 +9,11 @@ main {
 }
 
 h2.section-title {
+    text-align: left;
     margin-top: 3rem;
-    font-family: "Helvetica", serif;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /* Navigation bar styling */
@@ -52,7 +55,7 @@ a.no-underline:hover {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
